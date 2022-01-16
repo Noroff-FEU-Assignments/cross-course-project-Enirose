@@ -1,23 +1,43 @@
+@import url();
+
+html, 
 body  {
     font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 150px;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 header {
-    display: flex;
     align-items: center;
 }
 
+nav {
+    overflow: hidden;
+}
+
 nav ul {
-    padding: 0px;
+    padding: 1px;
 }
 
 nav li {
     display: inline-block;
+}
+
+nav, .search-container {
+    float: right;
+}
+
+.search-container {
+    float: right;
+    align-items: center;
 }
 
 nav a:hover {
@@ -33,17 +53,40 @@ footer {
 /* links */
 a {
     text-decoration: none;
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
+
+nav input[type=text] {
+    padding: 6px;
+    margin-left: 15px;
+    font-size: 17px;
+    border: none;
+    align-items: center;
+  }
+
+nav, .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    align-items: center;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
 
 header a {
     color: black;
     padding: 10px;
-    display: flex;
 }
 
 h1 {
-    font-size: 80px;
-    font-style: bold;
+    font-size: 50px;
     color: #0A3641;
 }
 
@@ -64,6 +107,7 @@ p {
 
 footer {
     text-align: center;
+    margin-top: auto;
     padding: 10px;
 }
 
@@ -80,11 +124,11 @@ footer {
 }
 
 .welcome__content {
-position: absolute;
-text-align: center;
-top: 100px;
-left: 100px;
-  }
+    max-width: 650px;
+    margin-left: 250px;
+    text-align: center;
+    float: left;
+    }
 
   .welcome__content div {
     margin: 90px 100px;
