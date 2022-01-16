@@ -1,6 +1,3 @@
-@import url();
-
-html, 
 body  {
     font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
@@ -44,10 +41,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-header,
+header, 
 footer {
     background-color: #b9b9b9;
     color: white;
+    max-width: 1000%;
 }
 
 /* links */
@@ -103,7 +101,6 @@ p {
     font-size: 1em;
     padding: 20px 50px;
     border-radius: 5px;
-    float: left;
     margin-left: 200px;
 }
 
@@ -111,6 +108,7 @@ footer {
     text-align: center;
     margin-top: auto;
     padding: 10px;
+
 }
 
 /* Home page */
@@ -119,19 +117,21 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: none;
     min-height: 70vh;
     position: relative;
-    padding: 160px;
+    padding: 170px;
 }
 
-.welcome__content {
-    max-width: 650px;
-    margin-left: 50px;
-
+.welcome__content, .cta {
+    max-width: 30px;
+    float: right;
     }
 
-  .welcome__content div {
-    margin: 90px 100px;
-  }
+@media (min-width: 600) {
+    .welcome {
+        background-position-x: center;
+        background-position-y: top;
+    }
+}
   
