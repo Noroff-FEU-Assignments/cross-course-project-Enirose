@@ -9,7 +9,7 @@ body  {
 .logo {
   max-width: 90px;
   margin-left: 20px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 header {
@@ -27,12 +27,31 @@ nav {
   right: 0px;
 }
 
+ul {
+  margin: 10px 10px;
+}
+
+li {
+  list-style: none;
+  overflow: hidden;
+}
+
 nav ul {
-  padding: 0px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+text-decoration: none;
 }
 
 nav li {
   display: fl;
+  margin: 10px;
+}
+
+header .fas {
+position: absolute;
+right: 30px;
+top: 25px;
 }
 
 #hamburger-menu {
@@ -70,7 +89,7 @@ nav input {
   border: none;
   font-size: 17px;
   border: none;
-  margin: 10px 20px 10px 180px;
+  margin: 5px 90px 10px 90px;
   cursor: pointer;
 }
 
@@ -116,14 +135,14 @@ footer {
 
 /* Home page */
 .welcome {
-  background-image: url("../images/pexels-pixabay-47356.jpg");
+  background-image: url("../images/pexels-pixabay-47356main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
-  min-height: 70vh;
+  min-height: 87vh;
   position: relative;
-  padding: 75px;
+  padding: 20px;
 }
 
 .welcome__content {
@@ -133,11 +152,38 @@ footer {
   max-width: 300px;
   }
 
+  /* Contact page*/
+  input,
+  select,
+  textarea {
+    border: 1px solid #c4c4c4;
+    margin: 10px auto;
+  }
+
+  .contact {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .cta {
+    padding: 10px 20px 10px 27px;
+    max-width: 150px;
+  }
 
 @media (min-width: 768px) {
   .logo {
     max-width: 150px;
   }
+
+  header .fas {
+    right: 40px;
+    top: 40px;
+    }
 
   a {
     margin-top: 10px;
@@ -173,15 +219,21 @@ footer {
   }
 
   .cta {
-    margin-left: 50px;
+    margin-left: 0px;
     padding: 10px 80px;
 }
 
-@media (min-width: 1000px) {
-    header label {
+@media (min-width: 1200px) {
+  header label {
     display: none;
   }
   
+  input {
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px 20px 10px 180px;
+  }
+
   nav, header {
     display: flex;
     flex-direction: row;
@@ -194,6 +246,11 @@ footer {
     display: block;
     position: static;
   }
+
+  nav ul {
+    padding: 1px;
+    flex-direction: row;
+    }
 
   nav li {
   display: inline-block;
@@ -222,4 +279,7 @@ footer {
   h1 {
     font-size: 60px;
   }
+
+  .cta {
+    margin-left: 300px;
 }
