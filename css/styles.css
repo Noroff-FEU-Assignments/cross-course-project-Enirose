@@ -28,7 +28,7 @@ nav {
 }
 
 ul {
-  margin: 10px 10px;
+  margin: 15px 0px;
 }
 
 li {
@@ -37,6 +37,7 @@ li {
 }
 
 nav ul {
+background: #b9b9b9;;
 padding: 10px;
 display: flex;
 flex-direction: column;
@@ -82,20 +83,19 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 nav input {
+  padding: 10px;
+  font-size: 10px;
   border: none;
-  font-size: 17px;
-  border: none;
-  margin: 5px 90px 10px 90px;
   cursor: pointer;
 }
 
 header a {
   color: black;
-  padding: 10px;
+  padding: 5px;
   margin-left: 10px;
 }
 
@@ -157,7 +157,6 @@ footer {
   select,
   textarea {
     border: 1px solid #c4c4c4;
-    margin: 10px auto;
   }
 
   .contact {
@@ -173,20 +172,69 @@ footer {
   form .cta {
     padding: 10px 20px 10px 27px;
     max-width: 150px;
+    margin-left: auto;
   }
 
-@media (min-width: 768px) {
+  /* About us*/
+.about__content {
+  text-align: center;
+}
+
+.about__content img {
+width: 265px;
+height: 186px;
+}
+
+.about__content p {
+  margin: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.about__content a {
+  margin-left: 0;
+}
+
+@media (min-width: 768px){
   .logo {
     max-width: 150px;
   }
 
-  header .fas {
-    right: 40px;
-    top: 40px;
+  header label {
+    display: none;
+  }
+
+  input {
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  nav, header {
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    padding: 0px;
+    justify-content: space-between;
+  }
+ 
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav ul {
+    padding: 0px;
+    flex-direction: row;
     }
 
+  nav li {
+  display: inline-block;
+  padding: 0px;
+  }
+
   a {
-    margin-top: 10px;
+    margin-top: 6px;
     text-align: center;
   }
   
@@ -194,12 +242,13 @@ footer {
     margin-left: 30px;
   }
 
-  input{
-    padding: 5px;
-    }
+  header .fas {
+    right: 40px;
+    top: 40px;
+  }
 
   .welcome {
-    min-height: 90vh;
+    min-height: 78vh;
   }
 
   .welcome__content {
@@ -219,55 +268,27 @@ footer {
   }
 
   .cta {
-    margin-left: 0px;
+    margin-left: 20px;
     padding: 10px 80px;
+  }
+
+  .about__content img {
+  width: 400px;
+  height: 250px;
+  }
 }
 
-@media (min-width: 1200px) {
-  header label {
-    display: none;
-  }
-  
-  input {
-    justify-content: space-between;
-    padding: 15px;
-    margin: 10px 20px 10px 180px;
+@media (min-width: 1000px) {
+a {
+  margin-top: 0px;
+}
+
+  li a {
+    font-size: 17px;
   }
 
-  nav, header {
-    display: flex;
-    flex-direction: row;
-    max-width:100%;
-    padding: 5px;
-    justify-content: space-between;
-  }
- 
-  nav {
-    display: block;
-    position: static;
-  }
-
-  nav ul {
-    padding: 1px;
-    flex-direction: row;
-    }
-
-  nav li {
-  display: inline-block;
-  padding: 0px;
-  }
-
-  a {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  li {
-    margin-left: 30px;
-  }
-
-  .welcome {
-    min-height: 90vh;
+  header a {
+    padding: 10px;
   }
 
   .welcome__content {
@@ -276,10 +297,16 @@ footer {
     max-width: 1200px;
   }
 
+  .about__content img {
+    width: 400px;
+    height: 250px;
+  }
+
   h1 {
     font-size: 60px;
   }
 
   .cta {
     margin-left: 300px;
+  }
 }
