@@ -28,7 +28,7 @@ nav {
 }
 
 ul {
-  margin: 15px 0px;
+  margin: 5px 0px;
 }
 
 li {
@@ -109,8 +109,8 @@ p {
   font-style: italic;
   display: flex;
   flex-direction: column;
-  margin: 1px 100px 20px 20px;
   text-align: left;
+  font-style: normal;
 }
 
 .cta {
@@ -145,12 +145,17 @@ footer {
   padding: 20px;
 }
 
+.welcome__content p {
+  margin: 6px 168px 20px 20px;
+}
+
 .welcome__content {
   display: flex;
   flex-direction: column;
   justify-content: left;
   max-width: 300px;
-  }
+}
+
 
   /* Contact page*/
   input,
@@ -174,9 +179,8 @@ footer {
     max-width: 150px;
     margin-left: auto;
   }
-
-  /* About us*/
-.about__content {
+  /* About us */
+  .about__content {
   text-align: center;
 }
 
@@ -195,11 +199,16 @@ height: 186px;
   margin-left: 0;
 }
 
-@media (min-width: 768px){
-  .logo {
-    max-width: 150px;
-  }
+/* Man */
+.container {
+  text-align: center;
+}
 
+.container p {
+  text-align: center;
+}
+
+@media (min-width: 768px){
   header label {
     display: none;
   }
@@ -248,7 +257,7 @@ height: 186px;
   }
 
   .welcome {
-    min-height: 78vh;
+    min-height: 85vh;
   }
 
   .welcome__content {
@@ -279,9 +288,13 @@ height: 186px;
 }
 
 @media (min-width: 1000px) {
-a {
+  .welcome {
+    min-height: 88vh;
+  }
+
+  a {
   margin-top: 0px;
-}
+  }
 
   li a {
     font-size: 17px;
