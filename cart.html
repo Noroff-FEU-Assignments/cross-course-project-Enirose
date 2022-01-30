@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cart page">
+    <script src="https://kit.fontawesome.com/b78b269c14.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=Roboto:ital@1&display=swap" rel="stylesheet">    
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Rainydays-cart</title>
+</head>
+<body>
+    <header>
+        <img src="images/Original-LOGO.png" alt="logo" class="logo">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="man.html">Man</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li> <input type="text" placeholder="Search.." name="search"></li>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Shopping Cart</h2>
+            <hr>
+        </section>
+        <section id="cart-container" class="container">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Qty</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="images/jacketRed1.jpg" alt="jacket"></td>
+                        <td>
+                            <h5>Jacket Red</h5>
+                        </td>
+                        <td>
+                            <h5>Kr 999-</h5>
+                        </td>
+                        <td><input class="w- pl-1" value="1" type="number"></td>
+                        <td>
+                            <h5>Kr 999-</h5>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="cart-bottom" class="container"></section>
+        <div>
+            <div>
+                <h5>Cart Total</h5>
+                <div>
+                    <h6>Subtotal</h6>
+                    <p>Kr 999-</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy;
+    </footer>
+</body>
+</html>

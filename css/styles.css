@@ -94,13 +94,12 @@ nav input {
 }
 
 nav i {
-  padding: 20px 13px;
+  padding: 15px;
 }
 
 header a {
   color: black;
   padding: 5px;
-  margin-left: 10px;
 }
 
 h1 {
@@ -211,6 +210,7 @@ footer {
   /* About us */
   .about__content {
   text-align: center;
+  margin: 60px;
 }
 
 .about__content img {
@@ -219,7 +219,7 @@ height: 186px;
 }
 
 .about__content p {
-  margin: 50px;
+  margin: 5%;
   padding: 10px;
   text-align: center;
 }
@@ -351,19 +351,62 @@ h4{
 }
 
 .sproduct select {
-  display: flex;
-  padding: 5px 10px;
+  padding: 10px 30px;
   margin: 6px;
+  width: 30px;
 }
 
 .sproduct input {
-  width: 50px;
-  height: 30px;
+  width: 30px;
+  height: 15px;
   padding-left: 10px;
   font-size: 16px;
   margin-right: 10px;
 }
 
+/* Cart */ 
+#cart-container table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#cart-container table thead {
+  font-weight: 700;
+}
+
+#cart-container table thead td {
+  background-color: #b9b9b9;
+  color: #fff;
+  border: none;
+  padding: 6px 0;
+}
+
+#cart-container table td {
+  border: 1px solid;
+  text-align: center;
+}
+
+#cart-container table td:nth-child(1) {
+  width: 50px;
+}
+
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3) {
+  width: 50px;
+} 
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+  width: 150px;
+} 
+
+#cart-container table tbody img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+}
 
 @media (min-width: 768px){
   header label {
