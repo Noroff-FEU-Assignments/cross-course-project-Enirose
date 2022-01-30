@@ -104,7 +104,7 @@ header a {
 }
 
 h1 {
-  color: #0A3641;
+  color: #0B3A40;
   margin-left: 5px;
 }
 
@@ -118,7 +118,7 @@ p {
 }
 
 .cta {
-  background-color: #3C3C3C;
+  background-color: #406973;
   color: white;
   font-size: 1em;
   border-radius: 5px;
@@ -129,6 +129,11 @@ p {
   margin-left: 10px;
   font-size: 1em;
   border-radius: 5px;
+  margin-top: 10px;
+}
+
+.cta:hover {
+  background-color: #B4D2D9;
 }
 
 footer {
@@ -162,20 +167,40 @@ footer {
 
 
   /* Contact page*/
-  input,
-  select,
-  textarea {
-    border: 1px solid #c4c4c4;
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
   }
 
-  .contact {
-    max-width: 1000px;
-    margin: auto;
+  input[type=submit] {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
+  input[type=submit]:hover {
+    background-color: #B4D2D9;
+  }
+
+  .contact-info {
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .column, input {
+    width: 90%;
+    margin-top: 0px;
+  }
+
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   form .cta {
@@ -205,6 +230,8 @@ height: 186px;
 
 /* Man */
 .buy-btn {
+background-color: #406973;
+color: white;
 height: 38px;
 font-size: 17px;
 }
@@ -260,7 +287,7 @@ font-size: 17px;
 }
 
 .product .buy-btn {
-  background-color: #3C3C3C;
+  background-color: #406973;
   transform: translateY(20px);
   opacity: 0;
   transition: 0,3s all;
@@ -409,15 +436,19 @@ h4{
     text-align: center;
   }
 
-  .cta {
-    margin-left: 20px;
-    padding: 10px 80px;
+  .btn {
+    margin-left: 50px;
+  }
+
+  .welcome__content .cta{
+    flex-direction: row;
   }
 
   .about__content img {
   width: 400px;
   height: 250px;
   }
+
  /* Shop */
   .s-row {
     display: flex;
@@ -427,6 +458,15 @@ h4{
     text-align: left;
     padding-left: 10px;
     margin: 6px;
+  }
+
+  /* Contact */
+  .column {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    margin-left: 80px;
+    padding: 20px;
   }
 }
 
@@ -466,7 +506,7 @@ h4{
     font-size: 60px;
   }
 
-  .cta {
-    margin-left: 300px;
+  .btn  {
+    margin-left: 20%;
   }
 }

@@ -29,17 +29,28 @@
             </ul>
         </nav>
     </header>
-    <main class="contact">
-            <h1>Get in Touch</h1>
-            <form method="get">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="Email">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send now" class="cta" />
-            </form>
+    <main>
+        <div class="contact-info">
+            <div style="text-align:center">
+                <h1>Get in Touch</h1>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/pexels-pixabay-372098cntct.jpg" style="width:100%" alt="contact-image">
+                </div>
+                <div class="column">
+                    <form method="get">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Full name">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email">
+                        <label for="message"></label>
+                        <textarea placeholder="Write something" id="message" style="height: 150px;"></textarea>
+                        <input type="submit" value="Send now" class="cta" />
+                    </form>
+                </div>
+            </div>  
+        </div>
     </main>
     <footer>Copyright &copy</footer>
 </body>
