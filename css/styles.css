@@ -254,6 +254,39 @@ hr {
   background-color: #3C3C3C;
 }
 
+.star i {
+  font-size: 0.8rem;
+  color: gold;
+}
+
+.star {
+  padding: 10px 0;
+}
+
+/* Shop */
+.row {
+  margin-top: 25px;
+}
+
+.s-row img {
+  width: 30%;
+}
+
+.small-img {
+  margin: auto;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+}
+
+.small-img-col {
+  flex-basis: 25%;
+  cursor: pointer;
+}
+
 
 @media (min-width: 768px){
   header label {
