@@ -393,7 +393,7 @@ h4{
 
 #cart-container table td:nth-child(2),
 #cart-container table td:nth-child(3) {
-  width: 50px;
+  width: 150px;
 } 
 
 #cart-container table td:nth-child(4),
