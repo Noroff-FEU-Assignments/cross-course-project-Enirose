@@ -117,9 +117,10 @@ p {
 }
 
 .cta {
-  background-color: #406973;
-  color: white;
+  background-color: #b9b9b9;
+  color: rgb(0, 0, 0);
   font-size: 1em;
+  font-weight: 800;
   border-radius: 5px;
   text-decoration: none;
   padding: 10px 20px 10px 20px;
@@ -257,6 +258,7 @@ font-size: 17px;
   display: flex;
   flex-wrap: wrap;
   padding: 0 25px;
+  justify-content: center;
 }
 
 .row .product {
