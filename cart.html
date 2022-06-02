@@ -46,54 +46,63 @@
         </nav>
     </header>
     <main>
-        <section class="container">
-            <h1>Shopping Cart</h1>
-            <hr>
-        </section>
-        <section id="cart-container" class="container">
-            <table width="100%">
-                <thead>
-                    <tr>
-                        <td>Remove</td>
-                        <td>Image</td>
-                        <td>Product</td>
-                        <td>Price</td>
-                        <td>Qty</td>
-                        <td>Total</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
-                        <td><img src="images/jacketRed1.jpg" alt="jacket"></td>
-                        <td>
-                            <h5>Jacket Red</h5>
-                        </td>
-                        <td>
-                            <h5>Kr 999-</h5>
-                        </td>
-                        <td><input class="w- pl-1" value="1" type="number"></td>
-                        <td>
-                            <h5>Kr 999-</h5>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section id="cart-bottom" class="container"></section>
-        <div>
-            <div>
-                <h5>Cart Total</h5>
-                <div>
-                    <h6>Subtotal</h6>
-                    <p>Kr 999-</p>
+        <h1>Shopping Cart</h1>
+        <hr>
+        <section class="cart">
+            <img src="images/jacketRed1.jpg" alt="Wind proof jacket">
+            <div class="cart-details">
+                <p>Rainydays</p>
+                <p>Cyclone Red</p>
+                <p>Size: M</p>
+                <div class="flex-price">
+                    <p>- 1 +</p>
+                    <p>kr 999</p>
                 </div>
             </div>
+        </section>
+        <a href="#"><span>Remove</span></a>
+        <hr>
+        <section class="cart">
+            <img src="images/darkblue.jpg" alt="Wind proof jacket">
+            <div class="cart-details">
+                <p>Rainydays</p>
+                <p>Cyclone Blue</p>
+                <p>Size: M</p>
+                <div class="flex-price">
+                    <p>- 1 +</p>
+                    <p>kr 999</p>
+                </div>
+            </div>
+        </section>
+        <a href="#"><span>Remove</span></a>
+        <hr>
+        <section>
+            <h3>Payment Summary</h3>
+            <div class="flex-info">
+                <p>Sub total</p>
+                <p>kr 1998</p>
+            </div>
+            <div class="flex-info">
+                <p>Shipping</p>
+                <p>Free</p>
+            </div>
+            <p>Esimated delivery in 4-5 days</p>
+            <div class="flex-info">
+                <p>Total</p>
+                <p>kr 1998</p>
+            </div>
+        </section>
+        <hr>
+        <div class="flex-buttons">
+            <a href="l"><button class="buy-btn">Buy Now</button></a>
+            <a href="#"><button class="buy-btn">Continue Shopping</button></a>
+        </div>
         </div>
     </main>
     <footer>
         Copyright &copy;
     </footer>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
