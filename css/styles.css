@@ -171,7 +171,6 @@ footer {
 input,
 select,
 textarea {
-  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   margin-top: 6px;
@@ -327,10 +326,17 @@ hr {
 
 .s-row img {
   width: 100%;
+  max-width: 500px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+  margin: 20px;
 }
 
 .s-row {
-  padding: 90px;
+  display: flex;
+  margin: 0 auto;
+  flex-flow: column;
+  background: white;
+  padding: 40px 30px 40px;
 }
 
 .row {
@@ -363,7 +369,6 @@ h4 {
 .sproduct select {
   padding: 10px 30px;
   margin: 6px;
-  width: 30px;
 }
 
 .sproduct input {
@@ -385,7 +390,7 @@ option {
 }
 
 #cart-container table thead {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 #cart-container table thead td {
@@ -507,14 +512,9 @@ option {
   }
 
   /* Shop */
-  .s-row {
-    display: flex;
-  }
 
   .p-details {
-    text-align: left;
-    padding-left: 10px;
-    margin: 6px;
+    padding-left: 60px;
   }
 
   /* Contact */
@@ -566,4 +566,15 @@ option {
   .btn {
     margin-left: 20%;
   }
+
+  .s-row {
+    flex-flow: row;
+    padding: 60px -1px 60px;
+    margin: 50px;
+  }
+
+  .p-details {
+    text-align: left;
+  }
+
 }
