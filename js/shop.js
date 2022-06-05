@@ -1,6 +1,9 @@
 const productContainer = document.querySelector(".container");
+// console.log(productContainer);
+
 const shoppingList = document.querySelector(".s-row");
 const productdetails = document.querySelector(".p-details");
+
 localStorage.setItem("s.row", JSON.stringify(shoppingList));
 
 

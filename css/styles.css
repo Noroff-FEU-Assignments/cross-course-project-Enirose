@@ -243,6 +243,7 @@ form .cta {
   color: white;
   height: 38px;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .featured {
@@ -300,6 +301,7 @@ form .cta {
   transform: translateY(20px);
   opacity: 0;
   transition: 0, 3s all;
+  cursor: pointer;
 }
 
 .product:hover .buy-btn {
