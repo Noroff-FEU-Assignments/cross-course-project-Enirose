@@ -1,5 +1,24 @@
 const cartItems = JSON.parse(localStorage.getItem("shoppingList"));
-console.log(cartItems);
+// console.log(cartItems);
+
+const cartContainer = document.querySelector(".container");
+const cartList = document.querySelector(".s-row");
+const total = document.querySelector("h2")
+
+// let total = 0;
+/*cart-list(Still not working) */
+cartContainer.forEach(function (cartElement) {
+    total += cartElement.h2;
+    cartContainer.innerHTML +=
+        `<div>
+            <img class="main-img">
+        </div>
+        `
+})
+
+total.innerHTML = "total.${h2}"
+
+
 
 
 
