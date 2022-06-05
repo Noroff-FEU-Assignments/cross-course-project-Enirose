@@ -388,6 +388,10 @@ option {
   margin: 10px;
 }
 
+.shopping-cart h1 {
+  text-align: center;
+}
+
 .cart {
   align-items: center;
   display: flex;
@@ -432,6 +436,10 @@ section .cart-info {
 
 .cart-info p {
   margin: 0px 0px 5px 0px;
+}
+
+.payment-details {
+  margin: 15px;
 }
 
 .delivery {
@@ -549,7 +557,7 @@ section .cart-info {
   /*cart*/
   .cart-details p {
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .cart-details {
@@ -569,7 +577,7 @@ section .cart-info {
   }
 
   .delivery {
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
   }
 }
@@ -604,10 +612,6 @@ section .cart-info {
   .about__content img {
     width: 400px;
     height: 250px;
-  }
-
-  h1 {
-    font-size: 60px;
   }
 
   .btn {
