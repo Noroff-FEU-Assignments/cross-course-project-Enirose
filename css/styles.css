@@ -328,7 +328,6 @@ hr {
   width: 100%;
   max-width: 500px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
-  margin: 20px;
 }
 
 .s-row {
@@ -453,6 +452,24 @@ section .cart-info {
   align-items: center;
   gap: 15px;
 }
+
+/*checkout page*/
+.payment {
+  text-align: center;
+  margin: 60px;
+  background-color: #e6eff0;
+}
+
+.payment p {
+  margin: 5%;
+  padding: 10px;
+  text-align: center;
+}
+
+.payment a {
+  margin-left: 0;
+}
+
 
 @media (min-width: 768px) {
   header label {

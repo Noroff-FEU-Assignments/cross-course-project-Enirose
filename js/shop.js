@@ -1,5 +1,7 @@
 const productContainer = document.querySelector(".container");
-const cart = document.querySelector(".shopping-cart");
+const shoppingList = document.querySelector(".s-row");
+const productdetails = document.querySelector(".p-details");
+localStorage.setItem("s.row", JSON.stringify(shoppingList));
 
 
 const buttons = document.querySelectorAll(".buy-btn");
