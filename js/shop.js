@@ -21,7 +21,7 @@ async function callApi(){
         <div><h1> ${json.attributes.variations}</h1></div>
         <div><h1> ${json.price_html}</h1></div>
         <h2> Product Details </h2>
-        <div><span> ${json.short_description}</span></div>
+        <div><p> ${json.short_description}</p></div>
       </div>`
 
 }
