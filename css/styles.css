@@ -267,7 +267,7 @@ form .cta {
   text-align: center;
 }
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 25px;
@@ -279,7 +279,7 @@ form .cta {
   margin-top: 8px;
   vertical-align: middle;
   transition: 0.3s all;
-}
+} */
 
 .row .product {
   display: grid;
@@ -300,7 +300,6 @@ form .cta {
   width: 100%;
   margin-top: 8px;
   vertical-align: middle;
-  transition: 0.3s all;
 }
 
 .product:hover img {

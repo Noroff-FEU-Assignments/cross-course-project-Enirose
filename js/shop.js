@@ -18,8 +18,8 @@ async function callApi(){
       `<div class = "details">
         <img src= "${json.images[0].thumbnail}"</img>
         <div><h1> ${json.name}</h1></div>
-        <div><h1> ${json.attributes.variations}</h1></div>
-        <div><h1> ${json.price_html}</h1></div>
+        <div><h2> ${json.price_html}</h2></div>
+        <a href="cart.html"><button class="buy-btn">Add to Cart</button></a>
         <h2> Product Details </h2>
         <div><p> ${json.short_description}</p></div>
       </div>`
