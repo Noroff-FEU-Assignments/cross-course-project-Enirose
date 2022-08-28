@@ -286,18 +286,19 @@ form .cta {
   flex: 1 0 250px;
 }
 
-.product {
+.details {
   cursor: pointer;
   text-align: center;
   padding: 0 25px;
   margin-bottom: 2rem;
 }
 
-.product img {
+.details img {
   border-color: #b9b9b9;
-  display: flex;
+  align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
+  max-width: 500px;
   margin-top: 8px;
   vertical-align: middle;
 }
