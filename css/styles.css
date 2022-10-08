@@ -267,38 +267,31 @@ form .cta {
   text-align: center;
 }
 
-/* .row {
+.row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 25px;
   justify-content: center;
-  border-color: #b9b9b9;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 8px;
-  vertical-align: middle;
-  transition: 0.3s all;
-} */
+}
 
 .row .product {
   display: grid;
   flex: 1 0 250px;
 }
 
-.details {
+.product {
   cursor: pointer;
   text-align: center;
   padding: 0 25px;
   margin-bottom: 2rem;
+  box-shadow: 1px 1px 25px #406973;
 }
 
-.details img {
-  border-color: #b9b9b9;
+.product img {
   align-items: center;
   flex-direction: column;
   width: 50%;
-  max-width: 500px;
+  max-width: 300px;
   margin-top: 8px;
   vertical-align: middle;
 }
