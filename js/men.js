@@ -1,5 +1,5 @@
 const container = document.querySelector(".row");
-const url = "https://rainydays-api.enirosehellum.com/wp-json/wc/store/products/";
+const url = 'https://rainydays-api.enirosehellum.com/wp-json/wc/store/products?categories=17';
 
 async function callApi(){
     const res = await fetch(url);
