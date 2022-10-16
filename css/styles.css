@@ -143,8 +143,15 @@ p {
 
 footer {
   text-align: center;
-  margin-top: auto;
   padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  line-height: 2;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Home page */
@@ -195,6 +202,7 @@ input[type=submit]:hover {
 .contact-info {
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 20rem;
 }
 
 .column,
@@ -224,6 +232,7 @@ form .cta {
 .about__content {
   text-align: center;
   margin: 60px;
+  margin-bottom: 20rem;
 }
 
 .about__content img {
@@ -232,9 +241,11 @@ form .cta {
 }
 
 .about__content p {
-  margin: 5%;
-  padding: 10px;
   text-align: center;
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  margin-bottom: 5rem;
 }
 
 .about__content a {
@@ -252,6 +263,7 @@ form .cta {
 
 .featured {
   margin: 5px;
+  margin-bottom: 20rem;
   padding: 10px;
   text-align: center;
 }
@@ -607,6 +619,13 @@ section .cart-info {
   .delivery {
     font-size: 15px;
     text-align: left;
+  }
+
+  footer p {
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: 150;
   }
 }
 
